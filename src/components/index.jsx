@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import Flags from 'country-flag-icons/react/3x2'
-import TextField from '@mui/material/TextField';
-import InputAdornment from '@mui/material/InputAdornment';
-import IconButton from '@mui/material/IconButton';
-import Menu from '@mui/material/Menu';
-import Divider from '@mui/material/Divider';
-import NativeSelect from '@mui/material/NativeSelect';
-import withStyles from '@mui/styles/withStyles';
+import TextField from '@material-ui/core/TextField';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import IconButton from '@material-ui/core/IconButton';
+import Menu from '@material-ui/core/Menu';
+import Divider from '@material-ui/core/Divider';
+import NativeSelect from '@material-ui/core/NativeSelect';
+import withStyles from '@material-ui/styles/withStyles';
 import {
   some, find, reduce, map, filter, includes, findIndex,
   head, tail, debounce, memoize, trim, startsWith, isString,
@@ -665,7 +665,12 @@ class MaterialUiPhoneNumber extends React.Component {
                   onClick={(e) => this.setState({ anchorEl: e.currentTarget })}
                   aria-haspopup
                 >
-                  {Boolean(FlagComponent) && <FlagComponent className="margin" />}
+                  {/* {Boolean(FlagComponent) && <FlagComponent className="margin" />} */}
+                  {Boolean(FlagComponent) && (
+                    <div className={classes.flagIcon}>
+                      <FlagComponent />
+                    </div>
+                  )}
                 </IconButton>
 
                 <Menu
