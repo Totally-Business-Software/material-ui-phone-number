@@ -23,6 +23,7 @@ class ChangeDemo extends React.Component {
         <br />
 
         <MaterialUiPhoneNumber
+          variant="outlined"
           defaultCountry="it"
           preferredCountries={['it', 'se']}
           onChange={(e) => {
@@ -40,16 +41,19 @@ export default render(
       <p>v1.1.0</p>
       <p>Exclude countries (usa, canada)</p>
       <MaterialUiPhoneNumber
+        variant="outlined"
         defaultCountry="no"
         excludeCountries={['us', 'ca']}
       />
       <p>Only countries</p>
       <MaterialUiPhoneNumber
+        variant="outlined"
         defaultCountry="gb"
         onlyCountries={['gb', 'es']}
       />
       <p>Preferred countries</p>
       <MaterialUiPhoneNumber
+        variant="outlined"
         defaultCountry="it"
         preferredCountries={['it', 'se']}
       />
@@ -57,6 +61,7 @@ export default render(
       <ChangeDemo />
       <p>Native</p>
       <MaterialUiPhoneNumber
+        variant="outlined"
         defaultCountry="it"
         preferredCountries={['it', 'se']}
         native
@@ -67,10 +72,12 @@ export default render(
       <p>v2</p>
       <p>Auto country detect by value</p>
       <MaterialUiPhoneNumber
+        variant="outlined"
         value="+3802343252"
       />
       <p>Disabled area codes with disableAreaCodes</p>
       <MaterialUiPhoneNumber
+        variant="outlined"
         defaultCountry="us"
         disableAreaCodes
       />
@@ -88,6 +95,7 @@ export default render(
         {'{\'europe\'}'}
       </p>
       <MaterialUiPhoneNumber
+        variant="outlined"
         defaultCountry="it"
         regions="europe"
       />
@@ -97,11 +105,13 @@ export default render(
         {'{[\'north-america\', \'carribean\']}'}
       </p>
       <MaterialUiPhoneNumber
+        variant="outlined"
         defaultCountry="ca"
         regions={['north-america', 'carribean']}
       />
       <p>Disabled dropdown</p>
       <MaterialUiPhoneNumber
+        variant="outlined"
         onlyCountries={['us']}
         defaultCountry="us"
         disableDropdown
@@ -109,6 +119,7 @@ export default render(
       />
       <p>Disabled dropdown and country code</p>
       <MaterialUiPhoneNumber
+        variant="outlined"
         onlyCountries={['us']}
         defaultCountry="us"
         disableAreaCodes
