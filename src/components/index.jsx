@@ -22,9 +22,13 @@ const styles = () => ({
     padding: 0,
     height: 30,
   },
-  flagIcon: {
+  flagIconButton: {
     width: 16,
     display: 'flex'
+  },
+  flagIcon: {
+    width: 16,
+    marginRight: 8
   },
   native: {
     width: 30,
@@ -667,7 +671,7 @@ class MaterialUiPhoneNumber extends React.Component {
                 >
                   {/* {Boolean(FlagComponent) && <FlagComponent className="margin" />} */}
                   {Boolean(FlagComponent) && (
-                    <div className={classes.flagIcon}>
+                    <div className={classes.flagIconButton}>
                       <FlagComponent />
                     </div>
                   )}
