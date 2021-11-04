@@ -24,7 +24,7 @@ const styles = () => ({
   },
   flagIcon: {
     width: 16,
-    marginRight: 8,
+    display: 'flex'
   },
   native: {
     width: 30,
