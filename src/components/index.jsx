@@ -24,7 +24,7 @@ const styles = () => ({
   },
   flagIconButton: {
     width: 16,
-    display: 'flex'
+    height: 36
   },
   flagIcon: {
     width: 16,
